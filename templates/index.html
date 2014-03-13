@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Geolocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+        body {
+          background-color: black;
+        }
+      .container {
+        padding: 50px;
+        max-width: 800px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Endpoints</h1>
+      <br>
+      <h3>http://localhost:5000/api/ip/ip_address</h3>
+      <ul>
+        <li>Method(s): GET</li>
+        <li>Description: Returns geolocation by IP</li>
+        <li>Example: <a href="http://localhost:5000/api/ip/208.113.137.114">
+            http://localhost:5000/api/ip/208.113.137.114</a></li>
+        <li>Response:</li>
+        {
+area_code: 714,
+city: "Brea",
+continent: "NA",
+country_code: "US",
+country_code3: "USA",
+country_name: "United States",
+dma_code: 803,
+latitude: 33.92689999999999,
+longitude: -117.8612,
+metro_code: "Los Angeles, CA",
+postal_code: "92821",
+region_code: "CA",
+time_zone: "America/Los_Angeles"
+}
+      </ul>
+      <br>
+      <h3>http://localhost:5000/api/domain/domain_name</h3>
+      <ul>
+        <li>Method(s): GET</li>
+        <li>Description: Returns geolocation by IP</li>
+        <li>Example: <a href="http://localhost:5000/api/domain/realpython.com">
+            http://localhost:5000/api/domain/realpython.com</a></li>
+<li>Response:</li>
+        {
+area_code: 714,
+city: "Brea",
+continent: "NA",
+country_code: "US",
+country_code3: "USA",
+country_name: "United States",
+dma_code: 803,
+latitude: 33.92689999999999,
+longitude: -117.8612,
+metro_code: "Los Angeles, CA",
+postal_code: "92821",
+region_code: "CA",
+time_zone: "America/Los_Angeles"
+}
+      </ul>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
